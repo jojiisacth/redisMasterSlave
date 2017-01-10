@@ -1,0 +1,1 @@
+https://github.com/kubernetes/kubernetes/tree/master/examples/storage/redis/image

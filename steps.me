@@ -1,5 +1,6 @@
 1. build image 
      docker build -t myredis2 .  
+
 2.  run docker . 
     docker run  myredis2 
     or 
@@ -7,7 +8,12 @@
 3.  startuing with env variables . 
     docker run -e MASTER=true  myredis   
 
-4 runnng scripts oina container 
+4 runnng scripts in a  container 
 
     docker exec -it 34fa0466b4e6 bash
-    
+
+
+5 tag 
+    docker tag myredis3 jojiisacth/redis . 
+6 push 
+    docker push   jojiisacth/redis

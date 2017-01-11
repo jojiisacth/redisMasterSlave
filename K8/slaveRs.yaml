@@ -1,24 +1,21 @@
 apiVersion: extensions/v1beta1
 kind: ReplicaSet
 metadata:
-  name: "redismaster"
+  name: "redisslave"
 spec:
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
         app: redis
-        type: "master"
+        type: "slave"
     spec:
       containers:
         - name: redis
           image: "jojiisacth/redis"
           command:
-            - "redis-server"
-          args:
-            - "/redisconf/master.conf"
-            - "--protected-mode"
-            - "no"
+            - "./run.sh"
+        
           resources:
             requests:
               cpu: "100m"

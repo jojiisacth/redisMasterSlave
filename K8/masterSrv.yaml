@@ -11,4 +11,4 @@ spec:
       targetPort: 6379
   selector:
       app: redis
-      name: "redis-1"
+      type: master

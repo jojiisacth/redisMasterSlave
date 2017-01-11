@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: ReplicaSet
+metadata:
+  name: "redis-1"
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: redis
+        name: "redis-1"
+    spec:
+      containers:
+        - name: redis
+          image: "jojiisacth/redis"
+          command:
+            - "redis-server"
+          args:
+            - "/redisconf/master.conf"
+            - "--protected-mode"
+            - "no"
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "100Mi"
+          ports:
+            - name: redis
+              containerPort: 6379
+              protocol: "TCP"
+            - name: cluster
+              containerPort: 16379
+              protocol: "TCP"
+         

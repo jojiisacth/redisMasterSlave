@@ -85,7 +85,7 @@ Prereq: 1. You should have a running  kubernets cluster and acces to it .
 #### 		6. Testing the deployment.
 1  Run the script in terminal 		
 		kubectl get pods
- you should see out put as below 
+   You should see out put as below 
  
  
  		NAME                READY     STATUS    RESTARTS   AGE
@@ -98,8 +98,32 @@ Prereq: 1. You should have a running  kubernets cluster and acces to it .
 		
 
 
-  #### 		5. Running the redis in kubernets cluster . 
-  1. To see whether the  pods running, run the command  
+  #### 		7. Testing the redis master slave . 
+  1.  Bash into master  
   
-  		kubectl get pods
+  		kubectl exec -it redismaster-yrq92 bash
+		
+  2. Open redis command line utility and add some data to redis 
+  
+		bash-4.3# 
+		redis-cli
+		127.0.0.1:6379> set mykey  myvalue
+		OK
+		127.0.0.1:6379> get mykey
+		"myvalue"
+		
+  1.  Bash into master  
+  
+  		kubectl exec -it redismaster-yrq92 bash
+		
+  2. Open redis command line utility and add some data to redis 
+  
+		bash-4.3# 
+		redis-cli
+		127.0.0.1:6379> set mykey  myvalue
+		OK
+		127.0.0.1:6379> get mykey
+		"myvalue"
+		
+ 3. 
   

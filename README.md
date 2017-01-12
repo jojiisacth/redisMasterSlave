@@ -73,7 +73,7 @@ Prereq: install docker if you are  skipping step 1
 
 Prereq: 1. You should have a running  kubernets cluster and acces to it . 
 	2. kubectl  installed  
-1. open a terminal in the K8 folder where we have YAML files are ressent . 
+1. Open a terminal in the K8 folder where we have YAML files are ressent . 
 2  Run the script in terminal 
 	
 	
@@ -86,5 +86,7 @@ Prereq: 1. You should have a running  kubernets cluster and acces to it .
 
 
   #### 		5. Running the redis in kubernets cluster . 
-  1. See whether the  pods running  
+  1. To see whether the  pods running, run the command  
+  
+  		kubectl get pods
   

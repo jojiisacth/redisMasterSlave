@@ -57,7 +57,17 @@ Prereq: install docker if you are  skipping step 1
 
 	```
 	
-#### 		4. Running the redis in kubernets cluster . 
+#### 		4. Push the image to a docker repository .  
+1. Run the script in terminal 
+	```sh
+		# tag the image .  
+    		docker tag myredis3 jojiisacth/redis . 
+		# push the image  
+    		docker push   jojiisacth/redis
+	```
+	
+	
+#### 		5. Running the redis in kubernets cluster . 
 
 Prereq: You should have a running  kubernets cluster and acces to it . 		
 1. Run the script in terminal 

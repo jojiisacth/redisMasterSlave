@@ -131,5 +131,4 @@ Prereq: 1. You should have a running  kubernets cluster and acces to it .
 
 		
  
-  #### This complete this experiment
-  
+  ### This complete this experiment :)

@@ -77,12 +77,25 @@ Prereq: 1. You should have a running  kubernets cluster and acces to it .
 2  Run the script in terminal 
 	
 	
-		 kubectl -f masterRs.yaml 
-		 kubectl -f masterSrv.yaml 
-		 kubectl -f slaveRs.yaml 
+		 kubectl create  -f masterRs.yaml 
+		 kubectl create  -f masterSrv.yaml 
+		 kubectl create  -f slaveRs.yaml 
 		 
 	
 #### 		6. Testing the deployment.
+1  Run the script in terminal 		
+		kubectl get pods
+ you should see out put as below 
+ 
+ 
+ 		NAME                READY     STATUS    RESTARTS   AGE
+		redismaster-yrq92   1/1       Running   0          33s
+		redisslave-a01ko    1/1       Running   0          14s
+		redisslave-gwm1n    1/1       Running   0          14s
+		
+		
+
+		
 
 
   #### 		5. Running the redis in kubernets cluster . 

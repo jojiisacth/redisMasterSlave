@@ -11,13 +11,11 @@ This is an experimental master slave set up on kubetnets
 		cd /vagrant
 		
 	```
-3. eee
-
-
 #### 		2. Build the redis image 
 Prereq: install docker if you are  skipping step 1  
 1. Run the script in terminal 
 	```sh
+	
 		docker build -t myredis3.2   .
 	
 	```

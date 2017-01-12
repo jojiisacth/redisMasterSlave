@@ -116,7 +116,7 @@ Prereq: 1. You should have a running  kubernets cluster and acces to it .
   
   		kubectl exec -it redismaster-yrq92 bash
 		
-  2. Open redis command line utility and add some data to redis 
+  4. Open redis command line utility and add some data to redis 
   
 		kubectl exec -it redisslave-a01ko  bash
 		bash-4.3#                                                                                                                                                                                               
@@ -130,4 +130,5 @@ Prereq: 1. You should have a running  kubernets cluster and acces to it .
 
 		
  
+  ------ end  --- 
   

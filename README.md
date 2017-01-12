@@ -75,9 +75,11 @@ Prereq: You should have a running  kubernets cluster and acces to it .
 1. open a terminal in the K8 folder where we have YAML files are ressent . 
 2  Run the script in terminal 
 	```sh
+	
 		 kubectl -f masterRs.yaml 
 		 kubectl -f masterSrv.yaml 
-		  kubectl -f slaveRs.yaml 
+		 kubectl -f slaveRs.yaml 
+		 
 	```
 	
 		

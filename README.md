@@ -41,5 +41,20 @@ Prereq: install docker if you are  skipping step 1
 		docker run -e MASTER=true  myredis3
 	
 	```
+	You should see below out put 
+	```sh
+		
+					    _.-``    `.  `_.  ''-._           Redis 3.2.5 (c72176ef/0) 64 bit
+			  .-`` .-```.  ```\/    _.,_ ''-._                                   
+			 (    '      ,       .-`  | `,    )     Running in standalone mode
+			 |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+			 |    `-._   `._    /     _.-'    |     PID: 6
+			  `-._    `-._  `-./  _.-'    _.-'                                   
+			 |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+			 |    `-._`-._        _.-'_.-'    |           http://redis.io        
+			  `-._    `-._`-.__.-'_.-'    _.-'                                                        
+
+
+	```
 	
 	

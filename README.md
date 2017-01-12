@@ -60,10 +60,12 @@ Prereq: install docker if you are  skipping step 1
 #### 		4. Push the image to a docker repository .  
 1. Run the script in terminal 
 	```sh
+	
 		# tag the image .  
     		docker tag myredis3 jojiisacth/redis . 
 		# push the image  
     		docker push   jojiisacth/redis
+		
 	```
 	
 	

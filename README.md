@@ -116,7 +116,8 @@ Prereq: 1. You should have a running  kubernets cluster and acces to it .
   
   		kubectl exec -it redismaster-yrq92 bash
 		
-  4. Open redis command line utility and add some data to redis 
+  4. Open redis command line utility view the date saved into master. 
+  	Also note that when you try to save data it will not be allowed 
   
 		kubectl exec -it redisslave-a01ko  bash
 		bash-4.3#                                                                                                                                                                                               
@@ -130,5 +131,5 @@ Prereq: 1. You should have a running  kubernets cluster and acces to it .
 
 		
  
-  ------ end  --- 
+  #### This complete this experiment
   

@@ -71,7 +71,8 @@ Prereq: install docker if you are  skipping step 1
 	
 #### 		5. Running the redis in kubernets cluster . 
 
-Prereq: You should have a running  kubernets cluster and acces to it . 		
+Prereq: 1. You should have a running  kubernets cluster and acces to it . 
+	2. kubectl  installed  
 1. open a terminal in the K8 folder where we have YAML files are ressent . 
 2  Run the script in terminal 
 	
@@ -81,4 +82,9 @@ Prereq: You should have a running  kubernets cluster and acces to it .
 		 kubectl -f slaveRs.yaml 
 		 
 	
-		
+#### 		6. Testing the deployment.
+
+
+  #### 		5. Running the redis in kubernets cluster . 
+  1. See whether the  pods running  
+  

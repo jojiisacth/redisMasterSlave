@@ -112,18 +112,22 @@ Prereq: 1. You should have a running  kubernets cluster and acces to it .
 		127.0.0.1:6379> get mykey
 		"myvalue"
 		
-  1.  Bash into master  
+  3.  Bash into slave  
   
   		kubectl exec -it redismaster-yrq92 bash
 		
   2. Open redis command line utility and add some data to redis 
   
-		bash-4.3# 
-		redis-cli
-		127.0.0.1:6379> set mykey  myvalue
-		OK
+		kubectl exec -it redisslave-a01ko  bash
+		bash-4.3#                                                                                                                                                                                               
+		bash-4.3# redis-cli  
 		127.0.0.1:6379> get mykey
 		"myvalue"
 		
- 3. 
+		127.0.0.1:6379> set my key  chnaged
+		(error) READONLY You can't write against a read only slave.
+		127.0.0.1:6379> 
+
+		
+ 
   

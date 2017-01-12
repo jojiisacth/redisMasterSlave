@@ -8,16 +8,36 @@ This is an experimental master slave set up on kubetnets
 	```sh
 		vagrant up
 		vagrant ssh
+		cd /vagrant
 		
 	```
 3. eee
 
 
 #### 		2. Build the redis image 
+Prereq: install docker if you are  skipping step 1  
 1. Run the script in terminal 
 	```sh
-		 docker build -t myredis3  
-		vagrant ssh
-		
+		docker build -t myredis3.2   .
+	
 	```
-2. 
+2. see whether the image is build as below . 
+	```sh
+	docker  images
+	```
+	you should see below out put 
+	```
+	[vagrant@redisimagebuilderv1 vagrant]$ docker  images
+	REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
+	myredis3            latest              9c58c6fe09bc        About a minute ago   9.399 MB
+	alpine              3.5                 88e169ea8f46        2 weeks ago          3.98 MB
+	```
+	
+#### 		3. Test the redis image 
+1. Run the script in terminal 
+	```sh
+		docker run -e MASTER=true  myredis3
+	
+	```
+	
+	docker run -e MASTER=true  myredis3

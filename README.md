@@ -57,4 +57,7 @@ Prereq: install docker if you are  skipping step 1
 
 	```
 	
-	
+#### 		4. Running the redis in kubernets cluster . 
+
+Prereq: You should have a running  kubernets cluster and acces to it . 		
+1. Run the script in terminal 

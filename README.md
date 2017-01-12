@@ -21,14 +21,18 @@ Prereq: install docker if you are  skipping step 1
 	```
 2. see whether the image is build as below . 
 	```sh
+	
 		docker  images
+	
 	```
 	You should see below out put 
-	```
+	```sh
+		
 		[vagrant@redisimagebuilderv1 vagrant]$ docker  images
 		REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
 		myredis3            latest              9c58c6fe09bc        About a minute ago   9.399 MB
 		alpine              3.5                 88e169ea8f46        2 weeks ago          3.98 MB
+	
 	```
 	
 #### 		3. Test the redis image 
